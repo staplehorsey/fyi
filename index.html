@@ -24,7 +24,7 @@
             display: flex;
             align-items: flex-start;
             gap: 40px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
             min-height: 400px;
             max-width: 100%;
             overflow: hidden;
@@ -52,6 +52,14 @@
         .links {
             flex: 0 0 auto;
             padding: 40px 20px;
+        }
+
+        .bio-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #2C1810;
+            margin-bottom: 25px;
+            max-width: 300px;
         }
 
         .links ul {
@@ -126,22 +134,38 @@
             .main-content {
                 flex-direction: column;
                 min-height: auto;
+                gap: 24px;
+                margin-bottom: 32px;
             }
             
             .image-container {
                 max-width: 100%;
             }
             
+            .bio-text {
+                max-width: 100%;
+                text-align: left;
+                margin-bottom: 16px;
+            }
+
+            .links {
+                padding: 0;
+            }
+
             .links ul {
                 display: flex;
                 gap: 20px;
                 list-style-type: none;
                 padding-left: 0;
+                margin: 0;
             }
             
-            .links {
-                width: 100%;
-                padding: 20px 0;
+            .misc-section {
+                padding: 24px;
+            }
+
+            .misc-section h2 {
+                margin-bottom: 16px;
             }
         }
     </style>
@@ -153,6 +177,9 @@
                 <img src="SHB.jpeg" alt="SHB Image">
             </div>
             <div class="links">
+                <div class="bio-text">
+                    Yet another soul playing startup on the pathless path. If you think I can be helpful reach out
+                </div>
                 <ul>
                     <li><a href="https://substack.com/@yourusername">Writing</a></li>
                     <li><a href="https://twitter.com/yourusername">DM @ staplehorsey</a></li>
