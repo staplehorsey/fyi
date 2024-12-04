@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A soldier surrounded by enemies, if he is to cut his way out, needs to combine a strong desire for living with a strange carelessness about dying. He must not merely cling to life, for then he will be a coward, and will not escape. He must not merely wait for death, for then he will be a suicide, and will not escape. He must seek his life in a spirit of furious indifference to it; he must desire life like water and yet drink death like wine.">
+    <title>staple.fyi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background-color: #F4ECD8;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #2C1810;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 60px;
+            min-height: 400px;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .image-container {
+            flex: 1;
+            max-width: 70%;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            display: block;
+        }
+
+        .links {
+            flex: 0 0 auto;
+            padding: 40px 20px;
+        }
+
+        .links ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .links li {
+            margin-bottom: 15px;
+        }
+
+        .links a {
+            color: #2C1810;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.2s ease;
+        }
+
+        .links a:hover {
+            color: #8B4513;
+            text-decoration: underline;
+        }
+
+        .misc-section {
+            background: rgba(255,255,255,0.5);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .misc-section h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #2C1810;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(44,24,16,0.1);
+        }
+
+        th {
+            font-weight: 600;
+            color: #2C1810;
+        }
+
+        @media (max-width: 1200px) {
+            .main-content {
+                flex-direction: row;
+                align-items: flex-start;
+                min-height: 300px;
+            }
+            
+            .image-container {
+                max-width: 60%;
+            }
+            
+            .links {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                min-height: auto;
+            }
+            
+            .image-container {
+                max-width: 100%;
+            }
+            
+            .links ul {
+                display: flex;
+                gap: 20px;
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            .links {
+                width: 100%;
+                padding: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="image-container">
+                <img src="SHB.jpeg" alt="SHB Image">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="https://substack.com/@yourusername">Writing</a></li>
+                    <li><a href="https://twitter.com/yourusername">DM @ staplehorsey</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <section class="misc-section">
+            <h2>Creations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Project 1</td>
+                        <td>Description of project 1</td>
+                    </tr>
+                    <tr>
+                        <td>Project 2</td>
+                        <td>Description of project 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
