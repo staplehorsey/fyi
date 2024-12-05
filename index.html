@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A soldier surrounded by enemies, if he is to cut his way out, needs to combine a strong desire for living with a strange carelessness about dying. He must not merely cling to life, for then he will be a coward, and will not escape. He must not merely wait for death, for then he will be a suicide, and will not escape. He must seek his life in a spirit of furious indifference to it; he must desire life like water and yet drink death like wine.">
+    <link rel="icon" type="image/jpeg" href="SHB.jpeg">
     <title>staple.fyi</title>
     <style>
         body {
@@ -31,8 +32,8 @@
         }
 
         .image-container {
-            flex: 1;
-            max-width: 70%;
+            flex: 0 0 auto;
+            width: 500px;
             position: relative;
             display: flex;
             align-items: flex-start;
@@ -42,16 +43,19 @@
         .image-container img {
             width: 100%;
             height: auto;
-            max-width: 100%;
             object-fit: contain;
             border-radius: 12px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.12);
             display: block;
+            margin: 0;
         }
 
         .links {
-            flex: 0 0 auto;
-            padding: 40px 20px;
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
 
         .bio-text {
@@ -135,21 +139,28 @@
                 flex-direction: column;
                 min-height: auto;
                 gap: 24px;
-                margin-bottom: 32px;
+                margin-bottom: 0;
+                align-items: center;
             }
             
             .image-container {
-                max-width: 100%;
+                width: 100%;
+                max-width: 500px;
+                display: flex;
+                justify-content: center;
             }
             
-            .bio-text {
-                max-width: 100%;
-                text-align: left;
-                margin-bottom: 16px;
+            .links {
+                width: 100%;
+                padding: 20px 0;
+                align-items: center;
+                text-align: center;
             }
 
-            .links {
-                padding: 0;
+            .bio-text {
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 16px;
             }
 
             .links ul {
@@ -158,8 +169,10 @@
                 list-style-type: none;
                 padding-left: 0;
                 margin: 0;
+                justify-content: center;
+                width: 100%;
             }
-            
+
             .misc-section {
                 padding: 24px;
             }
@@ -178,11 +191,11 @@
             </div>
             <div class="links">
                 <div class="bio-text">
-                    Yet another soul playing startup on the pathless path. If you think I can be helpful reach out
+                    Yet another soul playing startup on the pathless path. If you think I can be helpful reach out.
                 </div>
                 <ul>
-                    <li><a href="https://substack.com/@yourusername">Writing</a></li>
-                    <li><a href="https://twitter.com/yourusername">DM @ staplehorsey</a></li>
+                    <li><a href="https://substack.com/@staplehorsey">Writing</a></li>
+                    <li><a href="https://twitter.com/staplehorsey">DM @ staplehorsey</a></li>
                 </ul>
             </div>
         </div>
@@ -192,18 +205,14 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Project</th>
-                        <th>Description</th>
+                        <th>Thing</th>
+                        <th>Thought</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Project 1</td>
-                        <td>Description of project 1</td>
-                    </tr>
-                    <tr>
-                        <td>Project 2</td>
-                        <td>Description of project 2</td>
+                        <td><a href="https://staplelizard.replit.app/">Lizard Feelings</a></td>
+                        <td>Discovered replit's agents are amazing for getting moody over your ex</td>
                     </tr>
                 </tbody>
             </table>
